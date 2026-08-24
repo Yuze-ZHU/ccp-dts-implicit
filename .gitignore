@@ -1,0 +1,5 @@
+build/
+bin/
+results/
+__pycache__/
+cases/regression*.case

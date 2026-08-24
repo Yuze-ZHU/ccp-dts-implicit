@@ -1,0 +1,3 @@
+VARIABLES = "NeAve", "NiAve", "EeAve"
+ZONE T="T_over_dt_200_cycle_1500", F=POINT
+3.17696652e15 3.30382591e15 2.93689536e-3

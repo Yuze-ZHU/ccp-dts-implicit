@@ -1,0 +1,58 @@
+ionCSV = ../chemistry/ionization.csv
+excCSV = ../chemistry/excitation.csv
+useExcitationLoss = yes
+outputDir = ../results/smoke
+meshFile = ../mesh/lymberopoulos_90x1.xyz
+bccFile = ../mesh/lymberopoulos_90x1.bcc
+
+pseudoCFL = 10000
+cD = 1
+epsImplicit = 0.7
+chemRowSumDamping = 1.0
+omegaImplicit = 0.7
+dQmaxRel = 0.3
+qFloor = 1.0e-3
+relFloor = 1.0e-3
+
+dtPhys = 3.6873156342e-10
+nInnerDT = 5
+innerResTol = 0
+innerRelResTol = 0
+writeInnerResidual = no
+innerResWriteStep = 200
+stopPeriod = 0.01
+nTIDT = 200
+
+printStep = 1
+resWriteStep = 1
+writeStep = 100
+
+PhiRF = 100
+PhiAR = 0
+fRF = 13.56e6
+
+LRef = 2.54e-2
+TeRef = 11604.0
+nRef = 1.0e14
+phiRef = 100
+
+Ne0 = 1.0e14
+Ni0 = 1.0e14
+Te0 = 11604.0
+Phi0 = 0.0
+
+kB = 1.380649e-23
+e = 1.6022e-19
+eps0 = 8.8542e-12
+eV2J = 1.602e-19
+Hion = 15.7
+Hexc = 11.56
+me = 9.10938356e-31
+Gam = 0.01
+Ks = 1.19e5
+P = 1
+N0 = 3.22e22
+De0 = 3.86e24
+Di0 = 2.07e20
+muE0 = 9.66e23
+muI0 = 4.65e21

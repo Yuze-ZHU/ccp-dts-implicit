@@ -1,0 +1,12 @@
+[geometry]
+geomMode   = PLANAR
+axisDir    = 0
+axisOffset = 0.0
+
+[patches]
+left_rf    0  IMIN  0 45   PHI_RF      phiAmp=100.0  phase=90.0  wallBC=LYWALL  wallTe=0.5
+right_gnd  0  IMAX  0 45   PHI_GROUND  wallBC=LYWALL  wallTe=0.5
+bottom_gnd   0  JMIN  0 90   PHI_GROUND  wallBC=LYWALL  wallTe=0.5
+top_sym    0  JMAX  0 90   SYMMETRY
+
+[interfaces]
