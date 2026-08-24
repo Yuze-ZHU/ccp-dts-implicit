@@ -132,3 +132,11 @@ All field and history files use Tecplot-compatible ASCII formatting.
 ## Stop control
 
 During a calculation, write the value `1` to `stop.dat` in the selected output directory. The solver checks this file before each physical time step.
+
+## Reproduction data
+
+The data directory contains the compact numerical histories and fields used for the manuscript convergence and validation comparisons. See data/README.md for file descriptions and reference-data attribution.
+
+## License
+
+The solver is distributed under the BSD 3-Clause License. See LICENSE.
