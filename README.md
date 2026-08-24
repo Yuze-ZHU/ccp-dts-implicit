@@ -1,5 +1,7 @@
 # CCP Dual-Time Implicit Solver
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22074319.svg)](https://doi.org/10.5281/zenodo.22074319)
+
 This repository contains the time-domain reference implementation used for the one-dimensional argon capacitively coupled plasma benchmark. It contains only the BDF2 dual-time-stepping solver. Harmonic-balance and modified-Jacobi components are not included.
 
 ## Model
@@ -55,7 +57,10 @@ cases/paper2d_halfheight.case provides the half-height 90 by 45 two-dimensional 
 
 The supplied settings use BDF2 with T/dt = 100, a pseudo-CFL number of 12000, and 100 inner iterations per physical step. Run it with
 
+```bash
 ./bin/ccp-dts-implicit -c cases/paper2d_halfheight.case
+```
+
 This two-dimensional calculation is substantially more expensive than the 90 by 1 benchmark and has a separate output directory, results/paper2d_halfheight.
 
 ## Dependencies
@@ -140,3 +145,11 @@ The data directory contains the compact numerical histories and fields used for 
 ## License
 
 The solver is distributed under the BSD 3-Clause License. See LICENSE.
+
+## Citation
+
+If you use this code, please cite the associated *Computer Physics Communications* paper and the archived software release:
+
+Y. Zhu, *CCP Dual-Time Implicit Solver*, version 1.0.0, Zenodo (2026). https://doi.org/10.5281/zenodo.22074320
+
+The version-specific DOI above identifies the exact `v1.0.0` release used for the manuscript. The DOI for all versions of the software is https://doi.org/10.5281/zenodo.22074319.
